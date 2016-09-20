@@ -38,6 +38,6 @@ public class DrawAllocationVisitorTest extends SemanticTest {
       
       TypeDeclaration td = cu.getTypes().get(0);
       
-      Assert.assertFalse( td.getVariableDefinitions().isEmpty());
+      Assert.assertEquals(3, td.getMembers().size());
    }
 }
